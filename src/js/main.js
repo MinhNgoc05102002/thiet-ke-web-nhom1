@@ -3,12 +3,20 @@ const slideBtn = document.querySelectorAll('.slider__btn')
 const bar = document.querySelector('.bars')
 const closeBar = document.querySelector('.close')
 const navbarOnMobile = document.querySelector('.header__bottom') 
+const btnScrollTop = document.querySelector('.back-to-top') 
+const Loader = document.querySelector('.loader__wrap')
 
 const app = {
-    render: function(){
-
-    },
-
+    loadPage:function(){
+        console.log("hello")
+        window.onload = function(){
+            setTimeout(()=>{
+                Loader.style.opacity = "0"
+            },2000)
+            Loader.style.display = "none"
+        }
+    },    
+    
     handleSlider: function(){
 
         // slider start
@@ -73,8 +81,16 @@ const app = {
 
     handleEvent:function(){
         // parallax effect
+        btnScrollTop.addEventListener('click',()=>{
+            window.scrollTo({
+                top:0,
+                left:0,
+                behavior:'smooth'
+            })
+        })
+
+
         document.addEventListener('mousemove', parallax)
-        
         function parallax(e){
             this.querySelectorAll('.slider_img').forEach(img => {
                 const speed = img.getAttribute('data-speed')
@@ -89,6 +105,8 @@ const app = {
     },
 
     start: function(){
+        this.loadPage();
+
         this.handleSlider();
 
         this.handleEvent();

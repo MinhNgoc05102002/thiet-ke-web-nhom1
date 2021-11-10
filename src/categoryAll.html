@@ -5,13 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Danh mục sản phẩm</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../font/fontawesome-free-5.15.2-web/css/all.min.css">
     <link rel="icon" href="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/favicon.png?1628514159582">
-
     <link rel="stylesheet" href="../Grid layout/grid.css">
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
@@ -20,6 +18,13 @@
 </head>
 <body>
     <div class="app">
+        <div class="loader__wrap">
+            <i class="loader">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </i>
+        </div>
 
         <!-- Header start -->
         <div class="header">
@@ -219,6 +224,7 @@
                                 
                             </div>
                         </div>
+
                         <div class="home__product-list">
                             <div class="grid">
                                 <div class="row">
@@ -228,15 +234,16 @@
                                         </div>
                                         <div class="home__product-item__action">
                                             <div class="home__product-item__rating">
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                    <i class="far fa-star"></i>
-                                                <div class="home__product-item__rated">
-                                                    
-                                                </div>
+                                                <input type="radio" name="rate" id="star5" value="5">
+                                                <label for="star5" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star4" value="4">
+                                                <label for="star4" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star3" value="3">
+                                                <label for="star3" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star2" value="2">
+                                                <label for="star2" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star1" value="1">
+                                                <label for="star1" class="fas fa-star"></label>
                                             </div>
                                         </div>
                                         <p class="home__product-item__name">Fittonia</p>
@@ -245,283 +252,27 @@
                                             <span class="home__product-item__price-old">$24.45</span>                 
                                         </div>
                                     </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/Gerbera.jpg);">
-                                    
+
+                                    <a class="home__product-item col l-4 m-4 c-6" href="#" >                                   
+                                        <div class="home__product-item__img" style="background-image: url(../img//AllProduct/Fittonia.jpg);">
                                         </div>
                                         <div class="home__product-item__action">
                                             <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
+                                                <input type="radio" name="rate" id="star5" value="5">
+                                                <label for="star5" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star4" value="4">
+                                                <label for="star4" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star3" value="3">
+                                                <label for="star3" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star2" value="2">
+                                                <label for="star2" class="fas fa-star"></label>
+                                                <input type="radio" name="rate" id="star1" value="1">
+                                                <label for="star1" class="fas fa-star"></label>
                                             </div>
                                         </div>
-                                        <p class="home__product-item__name">Gerbera</p>
+                                        <p class="home__product-item__name">Fittonia</p>
                                         <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$30.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/ChineseEvergreen.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Chinese Evergreen</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$10.34</span>
-                                            <span class="home__product-item__price-old">$21.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img//AllProduct/daisy.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Daisy</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/DorisTaylor.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Doris Taylor</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$15.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct//EcheveriaOrion.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Echeveria Orion</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$15.34</span>
-                                            <span class="home__product-item__price-old">$34.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img//AllProduct/Elegans.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Elegans</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img//AllProduct/FicusLyata2.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Ficus Lyata</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$30.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img//AllProduct/ArumFern.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Arum Fern</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/Fittoniared.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Fittonia Red</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$30.34</span>
-                                            <span class="home__product-item__price-old">$41.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/Camellia.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Camellia</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/GoldcrestTree.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Goldcrest Tree</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/GrayCurl.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Gray Curl</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/miniCactus.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Mini Cactus</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
-                                            <span class="home__product-item__price-old">$24.45</span>                 
-                                        </div>
-                                    </a>
-                                    <a class="home__product-item col l-4 m-4 c-6" href="#">
-                                        <div class="home__product-item__img" style="background-image: url(../img/AllProduct/miniSnakePlant.jpg);">
-                                            
-                                        </div>
-                                        <div class="home__product-item__action">
-                                            <div class="home__product-item__rating">
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                                <i class="far fa-star"></i>
-                                            </div>
-                                        </div>
-                                        <p class="home__product-item__name">Mini Snake Plant</p>
-                                        <div class="home__product-item__price">
-                                            <span class="home__product-item__price-current">$22.34</span>
+                                            <span class="home__product-item__price-current">$20.34</span>
                                             <span class="home__product-item__price-old">$24.45</span>                 
                                         </div>
                                     </a>
@@ -558,9 +309,10 @@
                     </div>
                 </div>
 
-                <a href="#top" class="back-to-top">
-                    <i class="fa fa-angle-double-up"></i>
-                </a>
+                <button href="" class="back-to-top active">
+                    <i class="back-to-top-icon fa fa-angle-double-up"></i>
+                </button>
+
             </div>
         </div>
 
@@ -660,6 +412,7 @@
                 </div>
             </div>
         </footer>
-    </div>    
+    </div>
+    <script src="./js/category.js"></script>    
 </body>
 </html>

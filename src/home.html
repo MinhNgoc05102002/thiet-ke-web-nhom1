@@ -16,6 +16,126 @@
     <title>home</title>
 </head>
 <body>
+
+    <div class="loader__wrap">
+        <i class="loader">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </i>
+    </div>
+    
+    <!-- Header start -->
+    <div class="header">
+        <div class="grid wide">
+            <div class="header__top">
+                <div class="header__top-head hide-on-mobile-tablet">
+                    <div class="header__social">
+                        <span>Follow us:</span>
+                        <a href="" class="header__social-link"><i class="fab fa-facebook"></i></a>
+                        <a href="" class="header__social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="header__social-link"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                    <div class="header__user">
+                        <div class="header__user-login">
+                            <a href="" class="header__user-link"><span>Login</span><i class="fas fa-sign-in-alt"></i></a>
+                        </div>
+
+                        <div class="header__user-register">
+                            <a href="" class="header__user-link"><span>Register</span><i class="fas fa-user-plus"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header__top-body">
+                    <div class="header__logo">
+                                <a href="" class="header__logo-link"><img src="../img/logo.webp" alt=""></a>
+                            </div>
+    
+                            <div class="header__search hide-on-mobile-tablet">
+                                <input type="text" placeholder="Search here...">
+                                <button>
+                                    <a href="" class="header__search-link"><i class="header__search-icon fas fa-search"></i></a>
+                                </button>
+                            </div>
+    
+                            <div class="header__cart"> 
+                                <div class="header__search-on-tablet">
+                                    <i class="fas fa-search"></i>
+                                </div>
+                                
+                                <button class=""><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
+                                
+                                <label for="nav-mobile-input" class="nav__bars-btn">
+                                    <i class="fas fa-bars"></i>
+                                </label>
+
+                                <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+                                
+
+                                <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                                <div class="navbar__mobile">
+                                    <label for="nav-mobile-input" class="nav__mobile-close">
+                                        <i class="fas fa-times"></i>
+                                    </label>
+
+                                    <ul class="nav__mobile-list">
+                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Home</a></li>
+                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">About us</a></li>
+                                        <li class="nav__mobile-item">
+                                            <input type="checkbox" hidden class="nav__input-product" id="nav__product-id">
+                                            <label for="nav__product-id" class="nav__mobile-link">
+                                                <span>Product</span>
+                                                <i class="nav__mobile-icon fas fa-chevron-down"></i>
+                                            </label>
+                                            <div class="nav__mobile-product">
+                                                <ul class="nav__mobile-product-list">
+                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product1</a></li>
+                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product2</a></li>
+                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product3</a></li>
+                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product4</a></li>
+                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product5</a></li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">News</a></li>
+                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Contact</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header__bottom hide-on-mobile-tablet">
+        <div class="grid wide">
+            <div class="navbar">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
+                    <li class="nav__item"><a href="" class="nav__item-link">About us</a></li>
+                    <li class="nav__item">
+                        <a href="" class="nav__item-link">Product<i class="fas fa-chevron-down" id="nav__produce-icon"></i></a>
+                        
+                        <div class="nav__produce">
+                            <ul class="nav__produce-list">
+                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product1</a></li>
+                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product2</a></li>
+                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product3</a></li>
+                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product4</a></li>
+                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product5</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav__item"><a href="" class="nav__item-link">News</a></li>
+                    <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- Header end -->
+
     
     <!-- home -->
     <div class="home">
@@ -307,7 +427,12 @@
         </div>
     </div>
     
-    
+    <!-- footer -->
 
+    <!-- footer end -->
+    <button href="" class="back-to-top active">
+        <i class="back-to-top-icon fa fa-angle-double-up"></i>
+    </button>
+<script src="js/category.js"></script>
 </body>
 </html>

@@ -22,6 +22,7 @@ html{
     font-family: 'Zen Old Mincho', serif;
 }
 
+
 @keyframes fadeInUp{
     from{
         opacity: 0;
@@ -73,5 +74,14 @@ html{
     }
     to{
         opacity: 1;
+    }
+}
+
+@keyframes loader {
+    0%,100%{
+        transform: scale(0);
+    }
+    50%{
+        transform: scale(1);
     }
 }
