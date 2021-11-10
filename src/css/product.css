@@ -41,17 +41,20 @@ overflow: hidden;
 
  
 .card { 
-margin-top: 0px;    
-background: #eee;   
+margin-top: 0px;      
 padding: 3em;   
 line-height: 1.5em;
 } 
  
- 
+.add-to-cart {
+   background-color: brown;
+}
 .product-title, .price, .sizes, .colors {    
 font-weight: bold;
 border-bottom: 2px dashed #B3B3B3;
-padding: 10px;
+margin-top: 0px;
+padding-top: 0px;
+padding-bottom: 10px;
 }
  .line{
      align-self: center;
@@ -61,6 +64,7 @@ padding: 10px;
  }
  .price div{
     color: #91b959;
+    font-size: 30px;
  }
  .produc-detail-title{
     all: none;
