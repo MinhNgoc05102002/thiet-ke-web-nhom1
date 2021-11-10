@@ -1,5 +1,9 @@
 
 /* home - services */
+.home a{
+    text-decoration: none;
+    color: black;
+}
 .home__product-banner__img{
     position: relative;
     border: 1px solid #abd373;
@@ -103,7 +107,15 @@
 .best_seller-item{
     text-align: center;
     margin-top: 15px;
+    transform: (0);
+    transition: all 0.5s;
 }
+.new_product-item:hover, 
+.sale_off-item:hover, 
+.best_seller-item:hover{
+    transform: translateY(-10px);
+}
+
 .new_product-item__img, 
 .sale_off-item__img, 
 .best_seller-item__img{
@@ -171,6 +183,12 @@ span.best_seller-item__price{
     font-size: 30px;
     font-weight: bold;
 }
+.feedback_item_img_{
+    overflow: hidden;
+}
+.feedback_item{
+    overflow: hidden;
+}
 .feedback_item_img{
     border: 1px solid #abd373;
     background-size: cover;
@@ -178,7 +196,6 @@ span.best_seller-item__price{
     background-repeat: no-repeat;
     padding-top: 100%;
     margin: 20px auto;
-    /* overflow: hidden; */
     transition: all 1s;
 }
 .feedback_item_img:hover{
