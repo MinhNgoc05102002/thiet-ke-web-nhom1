@@ -46,9 +46,7 @@ padding: 3em;
 line-height: 1.5em;
 } 
  
-.add-to-cart {
-   background-color: brown;
-}
+
 .product-title, .price, .sizes, .colors {    
 font-weight: bold;
 border-bottom: 2px dashed #B3B3B3;
@@ -84,3 +82,6 @@ padding-bottom: 10px;
  .same-product-price{
     text-align: center;
  }
+ .add-to-cart {
+   background-color: brown;
+}
