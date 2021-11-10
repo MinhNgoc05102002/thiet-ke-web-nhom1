@@ -178,15 +178,19 @@ span.best_seller-item__price{
     background-repeat: no-repeat;
     padding-top: 100%;
     margin: 20px auto;
+    /* overflow: hidden; */
+    transition: all 1s;
+}
+.feedback_item_img:hover{
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
 }
 .feedback_item_info_name{
     color: brown;
     font-size: 20px;
     font-weight: bold;
-    /* margin: 0 0 0 10px; */
 }
 .feedback_item_info_comment{
     font-size: 16px;
-    /* margin: 0 10px 10px 10px; */
     text-align: justify;
 }
