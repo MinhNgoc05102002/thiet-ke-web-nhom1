@@ -147,6 +147,8 @@ span.sale_off-item__price{
 .sale_off-item__percent{
     color: brown;
     font-weight: bolder;
+    display: inline-block;
+    
 }
 /* best seller */
 .best_seller-item__price{
@@ -159,4 +161,32 @@ span.best_seller-item__price{
 .best_seller-item__number{
     font-size: 14px;
     color: darkgreen;
+}
+
+/* feedback of customers */
+.feedback{
+    margin: 10px auto;
+}
+.feedback_title h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.feedback_item_img{
+    border: 1px solid #abd373;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 100%;
+    margin: 20px auto;
+}
+.feedback_item_info_name{
+    color: brown;
+    font-size: 20px;
+    font-weight: bold;
+    /* margin: 0 0 0 10px; */
+}
+.feedback_item_info_comment{
+    font-size: 16px;
+    /* margin: 0 10px 10px 10px; */
+    text-align: justify;
 }
