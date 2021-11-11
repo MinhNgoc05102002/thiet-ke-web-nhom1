@@ -2,6 +2,48 @@
 .app{
    height: 1000px
 }
+
+.loader__wrap{
+    position: absolute;
+    width: 100%;
+    z-index: 10000;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to top right, #A3DDCB, var(--light-green));
+    opacity: 1;
+    transition: opacity .3s ease-in-out;
+}
+
+.loader{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.circle{
+    background-color: var(--light-green);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    animation: loader 2.5s linear infinite;
+    background-color: #5AA469;
+}
+
+.circle:nth-child(1){
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2){
+    animation-delay: .5s;
+}
+
+.circle:nth-child(3){
+    animation-delay: 1s;
+}
+
 .header{
     height: 120px;
     background-color: var(--light-green);
@@ -282,7 +324,7 @@
     bottom:0;
     left: 0;
     background-color: rgba(0, 0, 0, 0.3);
-    z-index: 5;
+    z-index: 9999;
     display: none;
     animation: fadeIn linear .3s;
 }
@@ -304,7 +346,7 @@
 /* nav-mobile */
 
 .navbar__mobile{
-    z-index: 10;
+    z-index: 10000;
     position: fixed;
     left: 0;
     top: 0;
@@ -423,6 +465,32 @@
     line-height: 2rem;
     width: 100%;
     text-align: left;
+}
+
+.back-to-top {
+    z-index: 99999;
+    text-align: center;
+    display: block;
+    position: fixed;
+    bottom: 30px;
+    right: 3%;
+    background-color: rgb(171, 211, 115);
+    /* border: 1px solid white; */
+    color: rgb(116, 119, 117);
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.8rem;
+    -webkit-transition: width 1s; /* Safari */
+    transition: width 10s;
+    cursor: pointer;
+}
+.back-to-top:hover {
+    color: white;
+    background-color: rgb(171, 211, 115);
 }
 
 
@@ -724,17 +792,17 @@
     .slider__navigation{
         top:calc(var(--header-height) + var(--slider-height))
     }
-    
-
 }
 
-/* option */
 
+/* option */
 @media (max-width:320px) {
     *{
         /* display: none; */
     }
 }
+
+
 
 
 
