@@ -12,129 +12,197 @@
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/footer.css">
     <link rel="icon" href="https://bizweb.dktcdn.net/100/344/983/themes/704702/assets/favicon.png?1628514159582">
     <title>home</title>
 </head>
 <body>
 
-    <div class="loader__wrap">
-        <i class="loader">
-            <div class="circle"></div>
-            <div class="circle"></div>
-            <div class="circle"></div>
-        </i>
-    </div>
-    
-    <!-- Header start -->
-    <div class="header">
-        <div class="grid wide">
-            <div class="header__top">
-                <div class="header__top-head hide-on-mobile-tablet">
-                    <div class="header__social">
-                        <span>Follow us:</span>
-                        <a href="" class="header__social-link"><i class="fab fa-facebook"></i></a>
-                        <a href="" class="header__social-link"><i class="fab fa-instagram"></i></a>
-                        <a href="" class="header__social-link"><i class="fab fa-linkedin"></i></a>
-                    </div>
-                    <div class="header__user">
-                        <div class="header__user-login">
-                            <a href="" class="header__user-link"><span>Login</span><i class="fas fa-sign-in-alt"></i></a>
-                        </div>
+    <div class="app">
+        <div class="loader__wrap">
+            <i class="loader">
+                <div class="circle"></div>
+                <div class="circle"></div>
+                <div class="circle"></div>
+            </i>
+        </div>
 
-                        <div class="header__user-register">
-                            <a href="" class="header__user-link"><span>Register</span><i class="fas fa-user-plus"></i></a>
+        <!-- Header start -->
+        <div class="header">
+            <div class="grid wide">
+                <div class="header__top">
+                    <div class="header__top-head hide-on-mobile-tablet">
+                        <div class="header__social">
+                            <span>Follow us:</span>
+                            <a href="" class="header__social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="header__social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="header__social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                        <div class="header__user">
+                            <div class="header__user-login">
+                                <a href="" class="header__user-link"><span>Login</span><i class="fas fa-sign-in-alt"></i></a>
+                            </div>
+
+                            <div class="header__user-register">
+                                <a href="" class="header__user-link"><span>Register</span><i class="fas fa-user-plus"></i></a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="header__top-body">
-                    <div class="header__logo">
-                                <a href="" class="header__logo-link"><img src="../img/logo.webp" alt=""></a>
-                            </div>
-    
-                            <div class="header__search hide-on-mobile-tablet">
-                                <input type="text" placeholder="Search here...">
-                                <button>
-                                    <a href="" class="header__search-link"><i class="header__search-icon fas fa-search"></i></a>
-                                </button>
-                            </div>
-    
-                            <div class="header__cart"> 
-                                <div class="header__search-on-tablet">
-                                    <i class="fas fa-search"></i>
+                    
+                    <div class="header__top-body">
+                        <div class="header__logo">
+                                    <a href="" class="header__logo-link"><img src="../img/logo.webp" alt=""></a>
                                 </div>
-                                
-                                <button class=""><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
-                                
-                                <label for="nav-mobile-input" class="nav__bars-btn">
-                                    <i class="fas fa-bars"></i>
-                                </label>
-
-                                <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
-                                
-
-                                <label for="nav-mobile-input" class="nav__overlay"></label>
-
-                                <div class="navbar__mobile">
-                                    <label for="nav-mobile-input" class="nav__mobile-close">
-                                        <i class="fas fa-times"></i>
+        
+                                <div class="header__search hide-on-mobile-tablet">
+                                    <input type="text" placeholder="Search here...">
+                                    <button>
+                                        <a href="" class="header__search-link"><i class="header__search-icon fas fa-search"></i></a>
+                                    </button>
+                                </div>
+        
+                                <div class="header__cart"> 
+                                    <div class="header__search-on-tablet">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    
+                                    <button class=""><a href=""><i class="header__cart-icon fas fa-cart-plus"></i></a></button>
+                                    
+                                    <label for="nav-mobile-input" class="nav__bars-btn">
+                                        <i class="fas fa-bars"></i>
                                     </label>
 
-                                    <ul class="nav__mobile-list">
-                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Home</a></li>
-                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">About us</a></li>
-                                        <li class="nav__mobile-item">
-                                            <input type="checkbox" hidden class="nav__input-product" id="nav__product-id">
-                                            <label for="nav__product-id" class="nav__mobile-link">
-                                                <span>Product</span>
-                                                <i class="nav__mobile-icon fas fa-chevron-down"></i>
-                                            </label>
-                                            <div class="nav__mobile-product">
-                                                <ul class="nav__mobile-product-list">
-                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product1</a></li>
-                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product2</a></li>
-                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product3</a></li>
-                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product4</a></li>
-                                                    <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product5</a></li>
-                                                </ul>
-                                            </div>
-                                        </li>
-                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">News</a></li>
-                                        <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Contact</a></li>
-                                    </ul>
+                                    <input type="checkbox" hidden name="" class="nav__input" id="nav-mobile-input">
+                                    
+
+                                    <label for="nav-mobile-input" class="nav__overlay"></label>
+
+                                    <div class="navbar__mobile">
+                                        <label for="nav-mobile-input" class="nav__mobile-close">
+                                            <i class="fas fa-times"></i>
+                                        </label>
+
+                                        <ul class="nav__mobile-list">
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Home</a></li>
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="">About us</a></li>
+                                            <li class="nav__mobile-item">
+                                                <input type="checkbox" hidden class="nav__input-product" id="nav__product-id">
+                                                <label for="nav__product-id" class="nav__mobile-link">
+                                                    <span>Product</span>
+                                                    <i class="nav__mobile-icon fas fa-chevron-down"></i>
+                                                </label>
+                                                <div class="nav__mobile-product">
+                                                    <ul class="nav__mobile-product-list">
+                                                        <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product1</a></li>
+                                                        <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product2</a></li>
+                                                        <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product3</a></li>
+                                                        <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product4</a></li>
+                                                        <li class="nav__mobile-product-item"><a class="nav__mobile-product-link" href="">Product5</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="">News</a></li>
+                                            <li class="nav__mobile-item"><a class="nav__mobile-link" href="">Contact</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
-                            </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="header__bottom hide-on-mobile-tablet">
-        <div class="grid wide">
-            <div class="navbar">
-                <ul class="nav__list">
-                    <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
-                    <li class="nav__item"><a href="" class="nav__item-link">About us</a></li>
-                    <li class="nav__item">
-                        <a href="" class="nav__item-link">Product<i class="fas fa-chevron-down" id="nav__produce-icon"></i></a>
-                        
-                        <div class="nav__produce">
-                            <ul class="nav__produce-list">
-                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product1</a></li>
-                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product2</a></li>
-                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product3</a></li>
-                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product4</a></li>
-                                <li class="nav__produce-item"><a href="" class="nav__produce-link">Product5</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav__item"><a href="" class="nav__item-link">News</a></li>
-                    <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
-                </ul>
+        <div class="header__bottom hide-on-mobile-tablet">
+            <div class="grid wide">
+                <div class="navbar">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="" class="nav__item-link">Home</a></li>
+                        <li class="nav__item"><a href="" class="nav__item-link">About us</a></li>
+                        <li class="nav__item">
+                            <a href="" class="nav__item-link">Product<i class="fas fa-chevron-down" id="nav__produce-icon"></i></a>
+                            
+                            <div class="nav__produce">
+                                <ul class="nav__produce-list">
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Product1</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Product2</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Product3</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Product4</a></li>
+                                    <li class="nav__produce-item"><a href="" class="nav__produce-link">Product5</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav__item"><a href="" class="nav__item-link">News</a></li>
+                        <li class="nav__item"><a href="" class="nav__item-link">Contact</a></li>
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Header end -->
+        <!-- Header end -->
+
+
+
+        <!-- slider start -->
+        <div class="grid wide">
+                <div class="slider__img">
+                    <div class="slide active" id="slide1">
+                        <div class="info active">
+                            <h1>65% OFF</h1>
+                            <h2>NEW PLANT</h2>
+                            <span>Lorem ipsum dolor sit</span>
+                            <a href="">DISCOVER NOW</a> 
+                        </div>
+                        <img src="../img/slider 1.webp" data-speed="-5" class="slider_img" alt="">
+                    </div>
+
+                    <div class="slide" id="slide2">
+                        <div class="info">
+                            <h1>65% OFF</h1>
+                            <h2>NEW PLANT</h2>
+                            <span>Lorem ipsum dolor sit</span>
+                            <a href="#">DISCOVER NOW</a>
+                        </div>
+                        <img src="../img/slider 2.webp" data-speed="-5" class="slider_img" alt="">
+                    </div>
+
+                    <div class="slide" id="slide3">
+                        <div class="info">
+                            <h1>65% OFF</h1>
+                            <h2>NEW PLANT</h2>
+                            <span>Lorem ipsum dolor sit</span>
+                            <a href="">DISCOVER NOW</a> 
+                        </div>
+                        <img src="../img/slider 1.webp" data-speed="-5" class="slider_img" alt="">
+                    </div>
+
+                    <div class="slide" id="slide4">
+                        <div class="info">
+                            <h1>65% OFF</h1>
+                            <h2>NEW PLANT</h2>
+                            <span>Lorem ipsum dolor sit</span>
+                            <a href="">DISCOVER NOW</a> 
+                        </div>
+                        <img src="../img/slider 2.webp" data-speed="-5" class="slider_img" alt="">
+                    </div>
+
+                    <div class="slide" id="slide5">
+                        <div class="info">
+                            <h1>65% OFF</h1>
+                            <h2>NEW PLANT</h2>
+                            <span>Lorem ipsum dolor sit</span>
+                            <a href="">DISCOVER NOW</a> 
+                        </div>
+                        <img src="../img/slider 1.webp" data-speed="-5" class="slider_img" alt="">
+                    </div>
+
+                    <div class="slider__navigation">
+                        <div class="slider__btn active"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                        <div class="slider__btn"></div>
+                    </div>
+                </div>
+        </div> 
+        <!-- slider end -->    
 
     
     <!-- home -->
@@ -428,11 +496,108 @@
     </div>
     
     <!-- footer -->
-
+    <footer class="footer">
+        <div class="grid wide">
+            <div class="row">
+                <div class="col l-4 m-12 c-12 footer__info">
+                    <img class="footer__logo" src="../img/logo.webp" alt="logo">
+                    <p class="footer__info-item">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur at doloremque libero sed cumque et, animi perspiciat</p>
+                    <p class="footer__info-item">Address: 70 Dong Anh, Lien Ha 15, District 11, Ha Noi City</p>
+                </div>
+                <div class="col l-2 m-6 c-12">
+                    <h3 class="footer__head">Useful links</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">How to shop</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">FAQ</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Log in</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Question?</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">See More</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-6 c-12"> 
+                    <h3 class="footer__head">Contact us</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">
+                                Phone number: 0399620226
+                            </a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">
+                                Email: support@gmail.com
+                            </a>
+                        </li>
+                        <!-- 4 bieu tuong mxh -->
+                        <li class="footer__item-icon ">       
+                            <a href="" class="footer__icon"><i class="fab fa-facebook"></i></a>
+                            <a href="" class="footer__icon"><i class="fab fa-twitter"></i></a>
+                            <a href="" class="footer__icon"><i class="fab fa-instagram"></i></a>
+                            <a href="" class="footer__icon"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-6 c-12">
+                    <h3 class="footer__head">My Account</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Sign In</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">View Cart</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">My Whishlist</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Track My Order</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Help</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col l-2 m-6 c-12">
+                    <h3 class="footer__head">Our Service</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Payment Methods</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Money Guarantee!</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Returns</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Shipping</a>
+                        </li>
+                        <li class="footer__item">
+                            <a href="" class="footer__item-link">Privacy Policy</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2021 Team One Made With &heartsuit;</p>
+            </div>
+        </div>
+    </footer>
     <!-- footer end -->
     <button href="" class="back-to-top active">
         <i class="back-to-top-icon fa fa-angle-double-up"></i>
     </button>
-<script src="js/category.js"></script>
+
+    <script src="./js/main.js"></script>
+    <script src="js/category.js"></script>
 </body>
 </html>
