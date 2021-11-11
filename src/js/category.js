@@ -12,9 +12,9 @@ const app={
 
     handleEvent:function(){
         btnScrollTop.addEventListener('click',()=>{
+            console.log(window)
             window.scrollTo({
                 top:0,
-                left:0,
                 behavior:'smooth'
             })
         })
