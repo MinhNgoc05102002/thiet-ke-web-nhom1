@@ -212,13 +212,14 @@ span.best_seller-item__price{
     }
 
     .home__product-banner__title{
-        font-size: 18px;
-    }
-    .home__product-banner__content{
         font-size: 14px;
     }
-    .home__product-banner__now{
-        font-size: 12px;
+    .home__product-banner__content{
+        font-size: 10px;
     }
+    .home__product-banner__now{
+        font-size: 10px;
+    }
+
 }
 
