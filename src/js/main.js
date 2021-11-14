@@ -8,7 +8,6 @@ const Loader = document.querySelector('.loader__wrap')
 
 const app = {
     loadPage:function(){
-        console.log("hello")
         window.onload = function(){
             setTimeout(()=>{
                 Loader.style.opacity = "0"

@@ -75,7 +75,7 @@ small{
 .required{
     color: red;
 }
-.button{
+.button__submit{
     background: transparent;
     color: #49b14d;
     position: relative;
