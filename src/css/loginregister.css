@@ -52,7 +52,7 @@
     border: 1px solid #eee;
     transition: 0.25s ease;
 }
-small{
+.massage{
     display: flex;
     bottom: 0;
     font-size: 1em;
@@ -64,11 +64,11 @@ small{
 .control.error input{
     border-color: #e74c3c;
 }
-.control.success small{
+.control.success .massage{
     visibility: hidden;
     color: #2ecc71;
 }
-.control.error small{
+.control.error .massage{
     visibility: visible;
     color: #e74c3c;
 }
@@ -90,7 +90,7 @@ small{
     cursor: pointer;
     transition: all 0.45s ease-in-out;
 }
-.button:hover{
+.button__submit:hover{
     background-color: #49b14d;
     color: #ffff;
 }

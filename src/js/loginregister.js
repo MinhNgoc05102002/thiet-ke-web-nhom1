@@ -1,85 +1,87 @@
-const form = document.querySelector('.button__submit');
-const Surname = document.getElementById('Surname');
-const Name = document.getElementById('Name');
-const Email = document.getElementById('Email');
-const Password = document.getElementById('Password');
-
-
+const form = document.querySelector('.button__submit')
+const Name = document.getElementById('Name') 
+const email = document.getElementById('Email')
+const passWord = document.getElementById('Password')
+const passWord2 = document.getElementById('Password2') 
 
 form.addEventListener('click', (e) => {
         e.preventDefault();
         
         checkInputs();
+        console.log("hello")
 });
 
 function checkInputs(){
-    if(Surname){
-        const SurnameValue = Surname.value.trim(); 
-        if(SurnameValue === ''){
-            setErrorFor(Surname, 'Surname cannot be blank');
-        }else {
-            setSuccessFor(Surname);
-        }
-    }
-
     if(Name){
-        const NameValue = Name.value.trim();
-        if(NameValue === '') {
+        const nameValue = Name.value.trim();
+        if(nameValue === '') {
             setErrorFor(Name, 'Name cannot be blank');
+        }else if(!isName(nameValue)){
+            setErrorFor(Name, 'This is not Name');
         }else{
-            setSuccessFor(Name);
+            setSuccessFor(Name)
         }
     }
+    const emailValue = email.value.trim();
+    const passWordValue = passWord.value.trim();
 
-
-    const EmailValue = Email.value.trim();
-    const PasswordValue = Password.value.trim();
-
+    if(passWord2){
+        const passWord2Value = passWord2.value.trim();
+        if(passWord2Value === '') {
+            setErrorFor(passWord2, 'Rewrite password cannot be blank');
+        }else if(passWord2Value !== passWordValue){
+            setErrorFor(passWord2, 'Password does not match');
+        }else{
+            setSuccessFor(passWord2)
+        }   
+    }
     
 
+    if(emailValue === '') {
+        setErrorFor(email, 'Email cannot be blank');
+    }else if(!isEmail(emailValue)){
+        setErrorFor(email, 'This is not Email');
+    }else{
+        setSuccessFor(email)
+    }
+
+    if(passWordValue === '') {
+        setErrorFor(passWord, 'Password cannot be blank');
+    }else if(!isPassWord(passWordValue)){
+        setErrorFor(passWord, 'This is not Password');
+    }else{
+        setSuccessFor(passWord)
+    }
+
+     
+    
+    
     function setErrorFor(input, message){
         const formControl = input.parentElement;
-        const small = formControl.querySelector('small');
-        small.innerText = message;
+        const errorMassage = formControl.querySelector('.massage');
+        errorMassage.innerText = message;
         formControl.className = 'control error';
     }
     
-    function setSuccessFor(input) {
-        const formControl = input.parentElement;
-        formControl.className = 'control success';
-    }
-    
-    if(EmailValue === '') {
-        setErrorFor(Email, 'Email cannot be blank');
-    } else if (!isEmail(EmailValue)) {
-        setErrorFor(Email, 'Not a valid email');
-    } else {
-        setSuccessFor(Email);
-    }
-    
-    if(PasswordValue === '') {
-        setErrorFor(Password, 'Password cannot be blank');
-    } else {
-        setSuccessFor(Password);
-    }
-    
-    
-    
-    function setErrorFor(input, message) {
-        const formControl = input.parentElement;
-        const small = formControl.querySelector('small');
-        formControl.className = 'control error';
-        small.innerText = message;
-    }
-    
+
     function setSuccessFor(input) {
     const formControl = input.parentElement;
     formControl.className = 'control success';
     }
     
     function isEmail(email) {
-       return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+       return /^([\w-]+(\?\:\.[\w-]+)*)@((\?\:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(\?\:\.[a-z]{2})?)$/.test(email);
     }
+
+    function isName(Name) {
+        return /^[A-Za-z]{1,20}$/.test(Name);
+    }
+
+    function isPassWord(passWord) {
+        return /^[A-Za-z0-9!@#$%^&*()_]{6,20}$/.test(passWord);
+    }
+
+    
 }
 
 

@@ -157,19 +157,10 @@
                         <span>Register an account</span>
                     </div>
                     <div class="icon">
-                        <img width="129px" height="37px" alt="facebook-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg">
-                        <img width="129px" height="37px" alt="google-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg">
+                        <a href="#" class="icon__social"><img width="129px" height="37px" alt="facebook-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/fb-btn.svg"></a>
+                        <a href="#" class="icon__social"><img width="129px" height="37px" alt="google-login-button" src="//bizweb.dktcdn.net/assets/admin/images/login/gp-btn.svg"></a>
                     </div>
-                    <form class="accout" id="from">
-                        <div class="control">
-                            <div class="fix">
-                                <label>Surname
-                                <span class="required">*</span>
-                                </label>
-                            </div>
-                                <input type="text" class="Surname-input" placeholder="eg: Harry" id="Surname">
-                                <small>error</small>
-                            </div>
+                    <form class="accout" id="form">
                         <div class="control">
                             <div class="fix">
                                 <label>Name
@@ -177,7 +168,7 @@
                                 </label>
                             </div>  
                                 <input type="text" class="Name-input" placeholder="eg: Potter" id="Name">
-                                <small>error</small>
+                                <div class="massage">error</div>
                         </div>
                         <div class="control">
                             <div class="fix">
@@ -186,7 +177,7 @@
                                 </label>
                             </div>  
                                 <input type="text" class="Email-input" placeholder="eg: abc@gmail.com" id="Email">
-                                <small>error</small>
+                                <div class="massage">error</div>
                         </div>
                         <div class="control">
                             <div class="fix">
@@ -195,12 +186,21 @@
                                 </label>
                             </div>  
                                 <input type="password" class="Password-input" placeholder="password" id="Password">
-                                <small>error</small>
+                                <div class="massage">error</div>
                         </div>
+                        <div class="control">
+                            <div class="fix">
+                                <label>Rewrite Password 
+                                <span class="required">*</span>
+                                </label>
+                            </div>  
+                                <input type="password" class="Password-input" placeholder="Rewrite password" id="Password2">
+                                <div class="massage">error</div>
+                            </div>
                     </form>
                     <div class="content">
                         <button type="submit" class="button__submit">Register</button>
-                         <a href="#" class="style-link">Login</a>
+                         <a href="./login.html" class="style-link">Login</a>
                     </div>
                 </div>
             </div>
