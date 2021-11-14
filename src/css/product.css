@@ -201,4 +201,6 @@
 .relative-product__item__price-old {
    font-size: 14px;
    text-decoration: line-through;
+}.buy{
+   text-decoration: none;
 }
