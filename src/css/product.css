@@ -27,9 +27,39 @@
 .product__left-content-name {
    font-size: 40px;
 }
-.product__left-content-rating {
-   font-size: 20px;
-   margin: 10px 0;
+.product__left__rating {
+   margin-top: 10px;
+   font-size: 14px;
+   display: flex;
+   justify-content: left;
+   flex-direction: row-reverse;
+}
+
+.product__left__rating input{
+   display: none;
+}
+
+.product__left__rating label{
+   font-size: 1.8rem;
+   color: lightgray;
+   margin: 0 5px;
+   text-shadow: 1px 1px #bbb;
+   cursor: pointer;
+   transform: rotateZ(0deg);
+   transition: all .2s linear;
+}
+
+.product__left__rating input:checked ~ label{
+   color: yellow;
+}
+
+.product__left__rating input:not(:checked) ~ label:hover{
+   transform: rotateZ(30deg);
+}
+
+.product__left__rating input:not(:checked) ~ label:hover,
+.product__left__rating input:not(:checked) ~ label:hover ~ label{
+   color: yellow;
 }
 .product__left-content-info {
    font-size: 18px;
@@ -171,4 +201,6 @@
 .relative-product__item__price-old {
    font-size: 14px;
    text-decoration: line-through;
+}.buy{
+   text-decoration: none;
 }

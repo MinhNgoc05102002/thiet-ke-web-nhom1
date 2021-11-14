@@ -9,23 +9,23 @@
 .container{
     width: 100%;
     padding: 10px;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgb(210, 210, 210);
 }
 .container ul li{
     display: inline;
 }
 .container ul li a{
-    font-size: 1.2em;
+    font-size: 1.8em;
     text-decoration: none;
     color: #777777;
 }
 .start{
     margin-top: 10px;
-    font-size: 24px;
-    border-bottom: 1px solid #eee;
+    font-size: 30px;
+    border-bottom: 1px solid rgb(210, 210, 210);
     padding-bottom: 12px;
     margin-bottom: 25px;
-    font-weight: 400;
+    font-weight: 900;
 } 
 .icon{
     margin-top: 10px;
@@ -34,11 +34,14 @@
     max-width: 100%;
     display: flex;
     margin-bottom: 2px;
-    font-size: 15px;
-    font-weight: 700;;
+    font-size: 18px;
+    font-weight: 700;
 }
 .control{
     margin-bottom: 30px;
+}
+.control input {
+    font-size: 16px;
 }
 .Email-input,.Password-input,.Surname-input,.Name-input{
     width: 100%;
@@ -72,7 +75,7 @@ small{
 .required{
     color: red;
 }
-.button{
+.button__submit{
     background: transparent;
     color: #49b14d;
     position: relative;
@@ -125,6 +128,10 @@ small{
 }
 .content{
     margin-bottom: 10px;
+    font-size: 16px;
+}
+.content a{
+    font-size: 18px;
 }
 @media (max-width: 740px) {
     .accout{
