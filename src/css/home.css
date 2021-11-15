@@ -102,7 +102,9 @@
 }
 hr{
     width: 15%;
-    font-weight: bold;
+    height: 5px;
+    color: #504d4d; 
+    background-color: #504d4d;
 }
 
 /* sale off */
@@ -220,6 +222,8 @@ span.best_seller-item__price{
     .home__product-banner__now{
         font-size: 10px;
     }
-
+    p.last_p{
+        margin-bottom: 700px;
+    }
 }
 
