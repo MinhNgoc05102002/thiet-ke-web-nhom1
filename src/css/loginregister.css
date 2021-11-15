@@ -39,6 +39,7 @@
 }
 .control{
     margin-bottom: 30px;
+    margin: 10px;
 }
 .control input {
     font-size: 16px;
@@ -82,7 +83,7 @@
     outline: none;
     display: inline-block;
     padding: 15px 30px;
-    font-size: 13px;
+    font-size: 14px;
     border-radius: 100px;
     border: 1px solid;
     border-color: #49b14d;
@@ -100,7 +101,7 @@
 }
 .link-style{
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 16px;
     font-weight: 500;
     color: #49b14d;
     display: inline-block;
@@ -108,7 +109,7 @@
 }
 .style-link{
     margin-top: 15px;
-    font-size: 13px;
+    font-size: 18px;
     font-weight: 500;
     color: #49b14d;
     display: inline-block;
@@ -117,6 +118,7 @@
 .text-login{
     margin-top: 5px;
     margin-bottom: 10px;
+    font-size: 1.4rem;
 }
 .text-login p a{
     color: #777777;
@@ -129,9 +131,6 @@
 .content{
     margin-bottom: 10px;
     font-size: 16px;
-}
-.content a{
-    font-size: 18px;
 }
 @media (max-width: 740px) {
     .accout{

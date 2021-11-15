@@ -74,7 +74,7 @@ function checkInputs(){
     }
 
     function isName(Name) {
-        return /^[A-Za-z]{1,20}$/.test(Name);
+        return /^[A-Za-z0-9]{1,20}$/.test(Name);
     }
 
     function isPassWord(passWord) {
